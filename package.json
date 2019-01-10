@@ -1,0 +1,50 @@
+{
+  "name": "ADVuS",
+  "version": "1.0.0",
+  "description": "My Moleculer microservices project",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "moleculer-runner --repl",
+    "ci": "jest --watch",
+    "test": "jest --silent --colors --notify --verbose",
+    "lint": "eslint services"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.3.0",
+    "moleculer-repl": "^0.5.2"
+  },
+  "dependencies": {
+    "@types/bluebird": "^3.5.23",
+    "@types/node": "^10.5.4",
+    "bcrypt": "^3.0.2",
+    "bluebird": "^3.5.1",
+    "fastest-validator": "^0.6.10",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "moleculer": "^0.13.5",
+    "moleculer-db": "^0.7.6",
+    "moleculer-db-adapter-mongo": "^0.4.1",
+    "moleculer-prometheus": "^0.2.0",
+    "moleculer-web": "github:moleculerjs/moleculer-web",
+    "nats": "^1.0.1",
+    "uid-generator": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 8.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }
+}
